@@ -25,6 +25,7 @@ public class Ejemplo1 {
         String nombreAsignatura2;
         double notaAsignatura1;
         double notaAsignatura2;
+        double promedio;
         
         System.out.println("Ingrese nombre de asignatura 1");
         nombreAsignatura1 = entrada.nextLine();
@@ -35,13 +36,17 @@ public class Ejemplo1 {
         System.out.println("Ingrese nota de asignatura 2");
         notaAsignatura2 = entrada.nextDouble();
         
+        promedio = (notaAsignatura1 + notaAsignatura2) /2;
+        
         System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n"
-                + "Nota 2: %.2f\n",
+                + "Nota 2: %.2f\npromedio: %2f\n",
                 nombreAsignatura1,
                 notaAsignatura1,
                 nombreAsignatura2,
-                notaAsignatura2);
+                notaAsignatura2,
+                promedio);
    
     }
     
 }
+// next line sirve para Lee el contenido hasta el siguiente salto de línea y consume dicho salto.
